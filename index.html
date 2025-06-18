@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>writeup.rahulsetrakian.in - Coming Soon</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Fira+Code:wght@400;500;700&family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #00ff00;
+            font-family: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+            font-weight: 400;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            line-height: 1.5;
+            font-feature-settings: "liga" 1, "calt" 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 32rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        .initializing {
+            color: rgba(0, 255, 0, 0.6);
+            font-size: 0.875rem;
+            font-weight: 400;
+        }
+
+        .status-box {
+            border: 1px solid rgba(0, 255, 0, 0.3);
+            padding: 1.5rem;
+            background-color: rgba(0, 255, 0, 0.05);
+            text-align: left;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .status-line {
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .status-line:last-child {
+            margin-bottom: 0;
+        }
+
+        .status-construction {
+            color: #ffff00;
+            font-weight: 500;
+        }
+
+        .status-eta {
+            color: #00ffff;
+            font-weight: 500;
+        }
+
+        .status-purpose {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .message {
+            color: rgba(0, 255, 0, 0.8);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .sub-message {
+            font-size: 0.875rem;
+            color: rgba(0, 255, 0, 0.6);
+            margin-top: 0.5rem;
+            font-weight: 400;
+        }
+
+        .footer {
+            font-size: 0.75rem;
+            color: rgba(0, 255, 0, 0.4);
+            padding-top: 2rem;
+            font-weight: 400;
+        }
+
+        @media (min-width: 640px) {
+            .title {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Subtle cursor blink effect */
+        .cursor {
+            animation: blink 1s infinite;
+            font-weight: 400;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Fallback for systems without web fonts */
+        @supports not (font-feature-settings: "liga") {
+            body {
+                font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title">writeup.rahulsetrakian.in</h1>
+            <div class="initializing">&gt; initializing<span class="cursor">_</span></div>
+        </div>
+
+        <!-- Status -->
+        <div class="status-box">
+            <div class="status-line">
+                &gt; status: <span class="status-construction">under construction</span>
+            </div>
+            <div class="status-line">
+                &gt; eta: <span class="status-eta">soon™</span>
+            </div>
+            <div class="status-line">
+                &gt; purpose: <span class="status-purpose">security writeups &amp; research</span>
+            </div>
+        </div>
+
+        <!-- Simple message -->
+        <div class="message">
+            <p>building something interesting...</p>
+            <p class="sub-message">check back later</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">[rahul setrakian]</div>
+    </div>
+</body>
+</html>
